@@ -6430,7 +6430,7 @@ button.bg-dark:focus {
 
 .mb-0,
 .my-0 {
-  margin-bottom: 0 !important; }
+  margin-bottom: 0 !important; font-family: 'work sans' !important; }
 
 .ml-0,
 .mx-0 {
@@ -8244,12 +8244,11 @@ h1, h2, h3, h4, h5,
         .hero-wrap .slider-text .breadcrumbs span a {
           color: #fff; }
     .hero-wrap .slider-text .bread {
-      font-weight: 800;
+      font-weight: 500;
       color: #fff;
-      font-size: 30px;
+      font-size: 3em;
       font-family: "Poppins", Arial, sans-serif;
-      letter-spacing: 3px;
-      text-transform: uppercase; }
+      letter-spacing: 3px; }
     .hero-wrap .slider-text .btn-primary {
       border: 1px solid rgba(255, 255, 255, 0.4);
       -webkit-border-radius: 30px;
