@@ -8003,7 +8003,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Work Sans", Arial, sans-serif;
   background: #fff;
   font-size: 15px;
   line-height: 1.8;
@@ -8029,7 +8029,7 @@ h1, h2, h3, h4, h5,
   line-height: 1.5;
   font-weight: 400;
   color: #000000;
-  font-family: "Poppins", Arial, sans-serif; }
+  font-family: "Work Sans", Arial, sans-serif; }
 
 .text-primary {
   color: #82ae46 !important; }
@@ -8226,9 +8226,9 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    opacity: .6;
-    width: 50%;
-    background: #82ae46; }
+    opacity: .5;
+    width: 100%;
+    background: #222; }
   .hero-wrap .slider-text {
     color: #fff;
     position: relative; }
@@ -8383,7 +8383,7 @@ h1, h2, h3, h4, h5,
         left: 0;
         right: 0;
         background: #000000;
-        opacity: .2; }
+        opacity: .4; }
       .owl-carousel.home-slider .slider-item .slider-text {
         height: 450px;
         z-index: 0; }
@@ -9292,7 +9292,7 @@ textarea.form-control {
     font-size: 40px;
     font-weight: 600;
     color: #000000;
-    font-family: "Poppins", Arial, sans-serif; }
+    font-family: "Work Sans", Arial, sans-serif; }
     @media (max-width: 767.98px) {
       .heading-section h2 {
         font-size: 28px; } }
@@ -10030,7 +10030,7 @@ textarea.form-control {
     }
 
     .desc{
-      font-size: 1.5em !important;
+      font-size: 1.2em !important;
       font-weight: 400;
     }
 
