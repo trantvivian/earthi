@@ -237,6 +237,32 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#submit_button').submit(function(e) {
+        var full_name = $('#full_name').val();
+        var email = $('#email').val();
+        var address = $('#address').val();
+        var city = $('city').val();
+        var state = $('state').val();
+        var zip_code = $('zip_code').val();
+        var password = $('password').val();
+        var re_password = $('re_password').val();
+        $(".error").remove();
+        if (full_name.length < 2) {
+          $('#full_name').after('<span class= "error" style="color:red">Name must be longer than 2 characters </span>');
+          e.preventDefault();
+        }
+        if (![(a-z)(A-Z)]+[\s][(a-z)(A-Z)]+$.test(full_name)) {
+          $('#full_name').after('<span class="erorr" style="color:red">Please provide your full name.</span>');
+        }
+        if (password != re_password) {
+          $('#password').after('<span class="error" style="color:red>"Passwords must match</span>');
+        }
+        
+      });
+    });
+  </script>
     
   </body>
 </html>
