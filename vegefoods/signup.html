@@ -266,6 +266,9 @@
           $('#mail').after('<span class="error" style="color:red">Please provide your email.</span>');
         }
         // need to write regex for city (no numbers)
+        if (![(a-z)(A-Z)]+$.test(city)) {
+          $('#city').after('<span class="error" style="color:red">Please provide your city.</sp')
+        } 
         // need something to check if the email is already being used
         if (password != re_password) {
           $('#password').after('<span class="error" style="color:red>"Passwords must match</span>');
