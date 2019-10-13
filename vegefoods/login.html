@@ -165,6 +165,22 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script>
+      $(document).ready(function() {
+        $('#insert').submit(function(e) {
+          var email = $('#email').val();
+          var password = $('password').val();
+        });
+
+      if (email != "" || password != ""){
+          $('#password').after('<span class="error" style="color:red">Please fill in the information.</span>')
+      }
+      //if email and password do not work, prompt user to try again
+      if ("???????????????"){
+          $('#password').after('<span class="error" style="color:red">Please try again.</span>')
+      }
+      });
+  </script>          
     
   </body>
 </html>
