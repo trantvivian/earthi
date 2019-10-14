@@ -10089,3 +10089,8 @@ textarea.form-control {
   max-width:980px;
   margin:0 auto;
 }
+
+.alert a{
+  color: #721c24;
+  text-decoration: underline;
+}

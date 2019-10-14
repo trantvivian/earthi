@@ -14,16 +14,25 @@ $prequery = "SELECT * FROM siteusers (email)
             WHERE $password = *";
 
 $query = "INSERT into siteusers 
-        VALUES ('$full_name', '$email', '$address', '$city', '$state', '$zipcode', '$hashed_password')
-        ON CONFLICT (email) DO NOTHING";
+        VALUES ('$full_name', '$email', '$address', '$city', '$state', '$zipcode', '$hashed_password')";
+
+
 
 // IF ($prequery == "") THEN
-    $result = pg_query($db_connection, $query);
+
+$result = pg_query($db_connection, $query);
+$num_rows = pg_num_rows($result);
+
+if($num_rows < 1) {
+    header("Location: signup_error.html");
+} else {
     header("Location: result.html");
+}
+
+    
 // ELSE
 //     header("Location: about.html");
 // END IF;
-exit;
 
 ?>
 
