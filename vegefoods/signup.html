@@ -278,7 +278,7 @@
             e.preventDefault();
           }
 
-          if(!/[0-9]{5}/.test(zipcode)){
+          if(!/\d{5}/.test(zipcode)){
             $('#zipcode').after('<span class="error" style="color:red">Please enter a valid zip code</span>');
             e.preventDefault();
           }
