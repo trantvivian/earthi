@@ -74,7 +74,7 @@
                     <div class="limiter">
                             <div class="container-login100">
                                 <div class="wrap-login100">
-                                        <form action="submit.php" method="POST" class="bg-white contact-form">
+                                        <form id="login" action="submit.php" method="POST" class="bg-white contact-form">
                                                 <div class="form-group">
                                                     <span class = "label">Your Email</span>
                                                   <input type="text" class="form-control" placeholder="you@example.com">
@@ -166,7 +166,7 @@
   <script src="js/main.js"></script>
   <script>
       $(document).ready(function() {
-        $('#insert').submit(function(e) {
+        $('#login').submit(function(e) {
           var email = $('#email').val();
           var password = $('password').val();
         });
