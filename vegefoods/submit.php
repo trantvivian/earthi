@@ -17,6 +17,8 @@ $query = "INSERT into siteusers
         ON CONFLICT (email) DO NOTHING";
 
 $result = pg_query($db_connection, $query);
+header("Location: result.html");
+exit;
 
 ?>
 
