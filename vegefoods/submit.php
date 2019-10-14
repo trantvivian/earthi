@@ -8,7 +8,7 @@ $city = $_POST['city'];
 $state = $_POST['state'];
 $zipcode = $_POST['zipcode'];
 $password = $_POST['password'];
-$hashed_pasword = password_hash($password, PASSWORD_DEFAULT);
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
 
 
