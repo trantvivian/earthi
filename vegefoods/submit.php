@@ -10,14 +10,19 @@ $zipcode = $_POST['zipcode'];
 $password = $_POST['password'];
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-
+$prequery = "SELECT * FROM siteusers (email)
+            WHERE $password = *";
 
 $query = "INSERT into siteusers 
         VALUES ('$full_name', '$email', '$address', '$city', '$state', '$zipcode', '$hashed_password')
         ON CONFLICT (email) DO NOTHING";
 
-$result = pg_query($db_connection, $query);
-header("Location: result.html");
+// IF ($prequery == "") THEN
+    $result = pg_query($db_connection, $query);
+    header("Location: result.html");
+// ELSE
+//     header("Location: about.html");
+// END IF;
 exit;
 
 ?>
