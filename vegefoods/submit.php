@@ -10,7 +10,11 @@ $zipcode = $_POST['zipcode'];
 $password = $_POST['password'];
 $hashed_pasword = password_hash($password, PASSWORD_DEFAULT);
 
-$query = "INSERT into siteusers VALUES ('$full_name', '$email', '$address', '$city', '$state', '$zipcode', '$hashed_pasword')";
+
+
+$query = "INSERT into siteusers 
+        VALUES ('$full_name', '$email', '$address', '$city', '$state', '$zipcode', '$hashed_password')
+        ON CONFLICT (email) DO NOTHING";
 
 $result = pg_query($db_connection, $query);
 
