@@ -10,20 +10,17 @@ $zipcode = $_POST['zipcode'];
 $password = $_POST['password'];
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-$prequery = "SELECT * FROM siteusers (email)
-            WHERE $password = *";
-
 $query = "INSERT into siteusers 
         VALUES ('$full_name', '$email', '$address', '$city', '$state', '$zipcode', '$hashed_password')";
 
-
+$test = pg_query($db_connection, "SELECT * from siteusers where email='$email'");
 $result = pg_query($db_connection, $query);
-$num_rows = pg_num_rows($result);
+$num_rows = pg_affected_rows($test);
 
-if($num_rows < 1) {
-    header("Location: signup_error.html");
-} else {
+if($num_rows == 0) {
     header("Location: result.html");
+} else {
+    header("Location: signup_error.html");
 }
 
 ?>
