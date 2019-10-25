@@ -10094,3 +10094,11 @@ textarea.form-control {
   color: #721c24;
   text-decoration: underline;
 }
+
+.product-quantity {
+  width: 100px;
+}
+
+.prudct-quantity input {
+  margin-left: 20px;
+}
