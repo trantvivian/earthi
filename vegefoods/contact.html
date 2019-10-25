@@ -188,12 +188,12 @@
         }
 
         if(!/^[a-zA-Z0-9\-\s.\#]{0,100}$/.test(subject)){
-          $('#subject').after('<span class="error" style="color:red">Please enter a valid address</span>');
+          $('#subject').after('<span class="error" style="color:red">Please enter subject</span>');
           e.preventDefault();
         }
 
         if(!"".test(message)){
-          $('#message').after('<span class="error" style="color:red">Please enter a valid city</span>');
+          $('#message').after('<span class="error" style="color:red">Please enter a valid message</span>');
           e.preventDefault();
         }
 
