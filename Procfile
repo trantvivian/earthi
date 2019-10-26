@@ -1,1 +1,1 @@
-web: gunicorn earthi.wsgi
+web: vendor/bin/heroku-php-apache2
