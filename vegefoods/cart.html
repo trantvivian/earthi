@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Vegefoods - Free Bootstrap 4 Template by Colorlib</title>
+    <title>earthi</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -81,8 +81,8 @@
 						      </tr>
 						    </thead>
 						    <tbody>
-						      <tr class="text-center">
-								<td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+						      <tr class="text-center productRow">
+								<td class="product-remove"><button><span class="ion-ios-close"></span></button></td>
 						        								
 						        <td class="image-prod"><div class="img" style="background-image:url(images/product-3.jpg);"></div></td>
 						        
@@ -100,8 +100,8 @@
 						        <td class="total">$4.90</td>
 						      </tr><!-- END TR-->
 
-						      <tr class="text-center">
-						        <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+						      <tr class="text-center productRow">
+								<td class="product-remove"><button><span class="ion-ios-close"></span></button></td>
 						        
 						        <td class="image-prod"><div class="img" style="background-image:url(images/product-4.jpg);"></div></td>
 						        
@@ -109,14 +109,14 @@
 						        	<h3>Bell Pepper</h3>
 						        </td>
 						        
-						        <td class="price">$15.70</td>
+						        <td class="price">$5.70</td>
 						        
 						        <td class="product-quantity">
 									<input type="number" value="1" min="1">
 					          	</div>
 					          </td>
 						        
-						        <td class="total">$15.70</td>
+						        <td class="total">$5.70</td>
 						      </tr><!-- END TR-->
 						    </tbody>
 						  </table>
@@ -235,15 +235,15 @@ function recalculateCart()
   var total = subtotal;
   
   /* Update totals display */
-  $('.totals-value').fadeOut(fadeTime, function() {
+  $('.totals-value').fadeOut(500, function() {
     $('#cart-subtotal').html(subtotal.toFixed(2));
     $('#cart-total').html(total.toFixed(2));
     if(total == 0){
-      $('.checkout').fadeOut(fadeTime);
+      $('.checkout').fadeOut(500);
     }else{
-      $('.checkout').fadeIn(fadeTime);
+      $('.checkout').fadeIn(500);
     }
-    $('.totals-value').fadeIn(fadeTime);
+    $('.totals-value').fadeIn(500);
   });
 }
 
@@ -252,36 +252,20 @@ function recalculateCart()
 function updateQuantity(quantityInput)
 {
   /* Calculate line price */
-  var productRow = $(quantityInput).parent().parent();
-  var price = parseFloat(productRow.children('.product-price').text());
+  var productRow = $(quantityInput).parent();
+  var price = parseFloat(productRow.children('.price').text());
   var quantity = $(quantityInput).val();
   var linePrice = price * quantity;
   
   /* Update line price display and recalc cart totals */
-  productRow.children('.product-line-price').each(function () {
-    $(this).fadeOut(fadeTime, function() {
+  productRow.children('.total').each(function () {
+    $(this).fadeOut(500, function() {
       $(this).text(linePrice.toFixed(2));
       recalculateCart();
-      $(this).fadeIn(fadeTime);
+      $(this).fadeIn(500);
     });
   });  
 }
-
-
-/* Remove item from cart */
-function removeItem(removeButton)
-{
-  /* Remove row from DOM and recalc cart total */
-  var productRow = $(removeButton).parent().parent();
-  productRow.slideUp(fadeTime, function() {
-    productRow.remove();
-    recalculateCart();
-  });
-}
-  </script>
-
-<!-- their stuff -->
-  <script>
 		$(document).ready(function(){
 
 		var quantity=0;
@@ -316,7 +300,28 @@ function removeItem(removeButton)
 		    });
 		    
 		});
-	</script>
+	  /* Remove item from cart */
+	function removeItem(removeButton)
+		{
+		/* Remove row from DOM and recalc cart total */
+		var productRow = $(removeButton).parent();
+		productRow.slideUp(500, function() {
+			productRow.remove();
+			recalculateCart();
+		});
+		}
+	  
+	  
+	  /* Recalculate cart */
+	  function recalculateCart()
+	  { var subtotal = 0;
+		
+		/* Sum up row totals */
+		$('.product').each(function () {
+		  subtotal += parseFloat($(this).children('.product-line-price').text());
+		});
+		}
+		</script>
     
   </body>
 </html>
