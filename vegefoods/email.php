@@ -20,9 +20,9 @@ if(isset($_POST['submit'])){
     $mail->addAddress('earthi.ecomm@gmail.com');
     $mail->addReplyTo($_POST['email'],$_POST['full_name']);
 
-    $mail->isHTML(false);
+    $mail->isHTML(true);
     $mail->Subject = $_POST['subject'];
-    $mail->Body = $_POST['message'];
+    $mail->Body = '<b>Name</b>: '. $_POST['full_name'] . '<p><b>Email</b>: ' . $_POST['email'] . '<p><b>Message</b>: ' . $_POST['message'];
 
     if(!$mail->send()){
         echo("Something went wrong. Please try again.");
