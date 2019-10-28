@@ -10114,3 +10114,17 @@ textarea.form-control {
   margin: 2px;
   display: none; /* Hidden by default */
 }
+
+.circle {
+  color: #fff;
+  width: 100%;
+  background: #82ae46;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
