@@ -10100,6 +10100,10 @@ textarea.form-control {
   width: 100px;
 }
 
+.showFilter{
+  display:block;
+}
+
 .filterDiv {
   float: left;
   background-color: #2196F3;

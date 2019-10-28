@@ -81,13 +81,13 @@
     		</div>
     		<div class="row">
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
+    				<div class="product filterDiv vegetables">
     					<a class="img-prod"><img class="img-fluid" src="images/product-1.jpg" alt="Colorlib Template">
     						<span class="status">50%</span>
     						<div class="overlay"></div>
     					</a>
     					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3 class="filterDiv vegetables"> Bell Pepper Basket (5)</h3>
+    						<h3> Bell Pepper Basket (5)</h3>
     						<div class="d-flex">
     							<div class="pricing">
 		    						<p class="price"><span class="mr-2 price-dc">$12.00</span><span class="price-sale">$6.00</span></p>
@@ -104,12 +104,12 @@
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
+    				<div class="product filterDiv fruits">
     					<a class="img-prod"><img class="img-fluid" src="images/product-2.jpg" alt="Colorlib Template">
     						<div class="overlay"></div>
     					</a>
     					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3 class="filterDiv fruits">Strawberry Basket (1 lb)</h3>
+    						<h3>Strawberry Basket (1 lb)</h3>
     						<div class="d-flex">
     							<div class="pricing">
 		    						<p class="price"><span>$8.00</span></p>
@@ -126,12 +126,12 @@
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
+    				<div class="product filterDiv vegetables">
     					<a class="img-prod"><img class="img-fluid" src="images/product-3.jpg" alt="Colorlib Template">
 	    					<div class="overlay"></div>
 	    				</a>
     					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3 class="filterDiv vegetables">Green Beans Bunch (1 lb)</h3>
+    						<h3>Green Beans Bunch (1 lb)</h3>
     						<div class="d-flex">
     							<div class="pricing">
 		    						<p class="price"><span>$6.00</span></p>
@@ -148,12 +148,12 @@
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
+    				<div class="product filterDiv vegetables">
     					<a class="img-prod"><img class="img-fluid" src="images/product-4.jpg" alt="Colorlib Template">
     						<div class="overlay"></div>
     					</a>
     					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3 class="filterDiv vegetables">Cabbage Basket (5)</h3>
+    						<h3>Cabbage Basket (5)</h3>
     						<div class="d-flex">
     							<div class="pricing">
 		    						<p class="price"><span>$25.00</span></p>
@@ -172,12 +172,12 @@
 
 
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
+    				<div class="product filterDiv fruits">
     					<a class="img-prod"><img class="img-fluid" src="images/product-5.jpg" alt="Colorlib Template">
     						<div class="overlay"></div>
     					</a>
     					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3 class="filterDiv fruits">Tomato Basket (1 lb)</h3>
+    						<h3>Tomato Basket (1 lb)</h3>
     						<div class="d-flex">
     							<div class="pricing">
 		    						<p class="price"><span>$5.00</span></p>
@@ -194,12 +194,12 @@
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
+    				<div class="product filterDiv vegetables">
     					<a class="img-prod"><img class="img-fluid" src="images/product-6.jpg" alt="Colorlib Template">
     						<div class="overlay"></div>
     					</a>
     					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3 class="filterDiv vegetables">Broccoli Basket (5)</h3>
+    						<h3>Broccoli Basket (5)</h3>
     						<div class="d-flex">
     							<div class="pricing">
 		    						<p class="price"><span>$20.00</span></p>
@@ -216,12 +216,12 @@
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
+    				<div class="product filterDiv vegetables">
     					<a class="img-prod"><img class="img-fluid" src="images/product-7.jpg" alt="Colorlib Template">
 	    					<div class="overlay"></div>
 	    				</a>
     					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3 class="filterDiv vegetables">Carrot Bunch (2 lb)</h3>
+    						<h3>Carrot Bunch (2 lb)</h3>
     						<div class="d-flex">
     							<div class="pricing">
 		    						<p class="price"><span>$6.00</span></p>
@@ -238,12 +238,12 @@
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="product">
+    				<div class="product filterDiv juice">
     					<a class="img-prod"><img class="img-fluid" src="images/product-8.jpg" alt="Colorlib Template">
     						<div class="overlay"></div>
     					</a>
     					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3 class="filterDiv juice">Fruit Juice Pack (3)</h3>
+    						<h3>Fruit Juice Pack (3)</h3>
     						<div class="d-flex">
     							<div class="pricing">
 		    						<p class="price"><span>$30.00</span></p>
@@ -355,8 +355,8 @@ function filterSelection(c) {
   if (c == "all") c = "";
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    w3RemoveClass(x[i], "showFilter");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showFilter");
   }
 }
 
