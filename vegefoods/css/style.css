@@ -10101,17 +10101,10 @@ textarea.form-control {
 }
 
 .showFilter{
-  display:block;
+  display:inline-block !important; 
 }
 
 .filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
   display: none; /* Hidden by default */
 }
 
