@@ -10121,3 +10121,8 @@ textarea.form-control {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%; }
+
+  .currFilter{
+    background:#82ae46;
+    color:#fff !important;
+  }
