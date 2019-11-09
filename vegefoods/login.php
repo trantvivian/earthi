@@ -6,8 +6,8 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-$verify = pg_query($db_connection, "SELECT hashed_password = 'insert crypt thing here' 
-as matched from users where email = '$email'");
+$verify = pg_query($db_connection, "SELECT * from siteusers where '$hashed_password' 
+as matched from siteusers where email = '$email'");
 
 $num_rows = pg_affected_rows($verify);
 
