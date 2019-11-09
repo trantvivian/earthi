@@ -173,12 +173,16 @@
       if (email != "" || password != ""){
           $('#password').after('<span class="error" style="color:red">Please fill in the information.</span>')
       }
-      //if email and password do not work, prompt user to try again
-      if ("???????????????"){
-          $('#password').after('<span class="error" style="color:red">Please try again.</span>')
-      }
+      if(!/[^\W]+[.|_]?[A-Za-z0-9]+[.|_]?[A-Za-z0-9]+[@][A-Za-z]+[.][A-Za-z]+/.test(email)){
+            $('#email').after('<span class="error" style="color:red">Please enter a valid email</span>');
+            e.preventDefault();
+          }
+      if (password.length < 8) {
+            $('#password').after('<span class="error" style="color:red">Password must be at least 8 characters long</span>');
+            e.preventDefault();
+          }
       });
-  </script>          
+  </script>      
     
   </body>
 </html>
