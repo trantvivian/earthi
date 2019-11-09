@@ -164,7 +164,7 @@ session_start();
     </div>
       <div class="col-md-12 heading-section ftco-animate">
         <h5 class="text-center text-success"></h5>
-        <form id="contactf" action="email.php" method="POST" class="bg-white p-5 contact-form">
+        <form id="contactf" action="refund.php" method="POST" class="bg-white p-5 contact-form">
           <div class="form-group">
             <input type="text" name="email" id="email" class="form-control" placeholder="Your Email">
           </div>
@@ -270,7 +270,7 @@ session_start();
   <script src="js/main.js"></script>
   <script>
     $(document).ready(function() {
-      $('#refund').submit(function(e) {
+      $('#contactf').submit(function(e) {
         var email = $('#email').val();
         var item = $('#item').val();
         var reason = $('#reason').val();

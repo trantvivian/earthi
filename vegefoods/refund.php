@@ -1,10 +1,11 @@
 <?php
-
-$result = "";
+$email = $_POST['email'];
+$item = $_POST['item'];
+$reason = $_POST['reason'];
 
 use PHPMailer\PHPMailer\PHPMailer;
 
-if(isset($_POST['submit'])){
+if(isset($_POST['refund'])){
     require 'vendor/autoload.php';
     $mail = new PHPMailer;
     
@@ -16,21 +17,19 @@ if(isset($_POST['submit'])){
     $mail->Username = 'earthi.ecomm@gmail.com';
     $mail->Password = 'Earthi123';
 
-    $mail->setFrom('earthi.ecomm@gmail.com');
-    $mail->addAddress('earthi.ecomm@gmail.com');
-    $mail->addReplyTo($_POST['email'],$_POST['full_name']);
+	$mail->setFrom('earthi.ecomm@gmail.com');
+    $mail->addAddress($email);
 
     $mail->isHTML(true);
-    $mail->Subject = $_POST['subject'];
-    $mail->Body = '<b>Name</b>: '. $_POST['full_name'] . '<p><b>Email</b>: ' . $_POST['email'] . '<p><b>Message</b>: ' . $_POST['message'];
+	$mail->Subject = 'Refund Request';
+    $mail->Body = 'You have successfully submitted a refund request. We will get back to you ASAP after reviewing your request. <p><b>Item</b>: '. $_POST['item'] . '<p><b>Reason</b>: ' . $_POST['reason'];
 
     if(!$mail->send()){
         echo("Something went wrong. Please try again.");
     } else{
-        header("Location: contact_success.html");
+        header("Location: member.html");
     }
 
 }
-
 
 ?>
