@@ -9,7 +9,7 @@ $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 $verify = pg_query($db_connection, "SELECT hashed_password = 'insert crypt thing here' 
 as matched from users where email = '$email'")
 
-$num_rows = pg_affected_rows($test);
+$num_rows = pg_affected_rows($verify);
 
 if(isset($_POST['submit'])){
 
