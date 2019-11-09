@@ -76,11 +76,11 @@
                                         <form id="login" action="login.php" method="POST" class="bg-white contact-form">
                                                 <div class="form-group">
                                                     <span class = "label">Your Email</span>
-                                                  <input type="text" class="form-control" placeholder="you@example.com">
+                                                  <input type="text" id="email" name="email" class="form-control" placeholder="you@example.com">
                                                 </div>
                                                 <div class="form-group">
                                                     <span class = "label">Password</span>
-                                                  <input type="text" class="form-control" placeholder="Password">
+                                                  <input type="password" id="password" name="password" class="form-control" placeholder="Password">
                                                 </div>
                                                 <div class="form-group text-center">
                                                   <input type="submit" value="Log In" class="btn btn-primary py-3 px-5">
@@ -168,20 +168,18 @@
         $('#login').submit(function(e) {
           var email = $('#email').val();
           var password = $('password').val();
-        });
-
-      if (email != "" || password != ""){
-          $('#password').after('<span class="error" style="color:red">Please fill in the information.</span>')
-      }
-      if(!/[^\W]+[.|_]?[A-Za-z0-9]+[.|_]?[A-Za-z0-9]+[@][A-Za-z]+[.][A-Za-z]+/.test(email)){
+          $(".error").remove();      
+        
+        if(!/[^\W]+[.|_]?[A-Za-z0-9]+[.|_]?[A-Za-z0-9]+[@][A-Za-z]+[.][A-Za-z]+/.test(email)){
             $('#email').after('<span class="error" style="color:red">Please enter a valid email</span>');
             e.preventDefault();
           }
-      if (password.length < 8) {
+        if (password.length < 8) {
             $('#password').after('<span class="error" style="color:red">Password must be at least 8 characters long</span>');
             e.preventDefault();
           }
       });
+    });
   </script>      
     
   </body>
