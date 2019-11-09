@@ -157,6 +157,46 @@ session_start();
 			</div>
 		</section>
 
+  <div class="container">
+    <div class="mb-0 ftco-animate">
+      <h1 class="text-center mb-0">Request a Refund</h1>
+      <p class="text-center">You may request a refund for an unsatisfactory purchase. We will review your reason and respond ASAP.</p>
+    </div>
+      <div class="col-md-12 heading-section ftco-animate">
+        <h5 class="text-center text-success"></h5>
+        <form id="contactf" action="email.php" method="POST" class="bg-white p-5 contact-form">
+          <div class="form-group">
+            <input type="text" name="email" id="email" class="form-control" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+              <select name="item" id="item" class="custom-select" style="height:52px!important;">
+              <option selected value="">Item</option>
+              <option value="Bell Peppers">Bell Peppers</option>
+              <option value="Strawberries">Strawberries</option>
+              <option value="Green Beans">Green Beans</option>
+              <option value="Cabbages">Cabbages</option>
+              <option value="Tomatoes">Tomatoes</option>
+              <option value="Broccoli">Broccoli</option>
+              <option value="Carrots">Carrots</option>
+              <option value="Fruit Juice">Fruit Juice</option>
+            </select>	
+          </div>
+          <div class="form-group">
+            <select name="reason" id="reason" class="custom-select" style="height:52px!important;">
+            <option selected value="">Reason</option>
+            <option value="Incorrect Product">Incorrect Product</option>
+            <option value="Never Arrived">Never Arrived</option>
+            <option value="Damaged Product">Damaged Product</option>
+            <option value="Did Not Meet Expectations">Did Not Meet Expectations</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+          <div class="form-group text-center">
+            <input type="submit" name="refund" value="Send Request" class="btn btn-primary py-3 px-5">
+          </div>
+        </form>
+      </div>
+    </div>
  
     	
     <footer class="ftco-footer ftco-section">
@@ -228,6 +268,33 @@ session_start();
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#refund').submit(function(e) {
+        var email = $('#email').val();
+        var item = $('#item').val();
+        var reason = $('#reason').val();
+
+        $(".error").remove();
+
+        if(!/[^\W]+[.|_]?[A-Za-z0-9]+[.|_]?[A-Za-z0-9]+[@][A-Za-z]+[.][A-Za-z]+/.test(email)){
+          $('#email').after('<span class="error" style="color:red">Please enter a valid email</span>');
+          e.preventDefault();
+        }
+
+        if(item == ""){
+            $('#item').after('<span class="error" style="color:red">Please select an item</span>');
+            e.preventDefault();
+          }
+
+        if(reason == ""){
+            $('#reason').after('<span class="error" style="color:red">Please select a reason</span>');
+            e.preventDefault();
+          }
+
+      });
+    });
+</script>
     
   </body>
 </html>
