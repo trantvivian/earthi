@@ -6,13 +6,8 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-$query = "INSERT into siteusers 
-        VALUES ('$full_name', '$email', '$address', '$city', '$state', '$zipcode', '$hashed_password')";
-
 $test = pg_query($db_connection, "SELECT * from siteusers where email='$email'");
-$result = pg_query($db_connection, $query);
 $num_rows = pg_affected_rows($test);
-
 
 use PHPMailer\PHPMailer\PHPMailer;
 
@@ -24,7 +19,7 @@ if(isset($_POST['submit'])){
         $mail->send();
         header("Location: result.html");
     } else{
-        header("Location: signup_error.html");
+        header("Location: login.html");
     }
 }
 
