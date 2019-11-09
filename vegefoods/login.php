@@ -17,7 +17,10 @@ $num_rows = pg_affected_rows($verify);
 if(isset($_POST['submit'])){
 
     if(password_verify($password, $grab_password)){
-        header("Location: result.html");
+        header("Location: member.html");
+    }
+    else if($num_rows == 0){
+        header("Location: signup_error2.html");
     }
     else{
         header("Location: login.html");
