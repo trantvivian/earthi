@@ -10086,7 +10086,7 @@ textarea.form-control {
   text-align:left!important;
 }
 
-#signup{
+#signup, #login{
   max-width:980px;
   margin:0 auto;
 }
