@@ -1,4 +1,5 @@
 <?php
+session_start();
 $db_connection = pg_connect("host=ec2-184-73-232-93.compute-1.amazonaws.com dbname=dfr5diqgclghcj user=jiyfrexzyevjgb
 password=c62964fdc99205e14046ec51c65dc8effb2fde516b1c72aaa009deac12401aa5");
 
@@ -18,7 +19,6 @@ if(isset($_POST['submit'])){
 
     if(password_verify($password, $grab_password)){
         header("Location: member.html");
-        session_start();
     }
     else if($num_rows == 0){
         header("Location: signup_error2.html");
