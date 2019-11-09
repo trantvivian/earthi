@@ -6,17 +6,14 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-$test = pg_query($db_connection, "SELECT * from siteusers where email='$email'");
+$verify = pg_query($db_connection, "SELECT hashed_password = 'insert crypt thing here' 
+as matched from users where email = '$email'")
+
 $num_rows = pg_affected_rows($test);
 
-use PHPMailer\PHPMailer\PHPMailer;
-
 if(isset($_POST['submit'])){
-    require 'vendor/autoload.php';
-    $mail = new PHPMailer;
 
-    if($num_rows == 0){
-        $mail->send();
+    if($num_rows > 0){
         header("Location: result.html");
     } else{
         header("Location: login.html");
