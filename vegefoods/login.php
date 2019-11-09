@@ -18,6 +18,7 @@ if(isset($_POST['submit'])){
 
     if(password_verify($password, $grab_password)){
         header("Location: member.html");
+        session_start();
     }
     else if($num_rows == 0){
         header("Location: signup_error2.html");
