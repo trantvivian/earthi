@@ -18,6 +18,7 @@ $num_rows = pg_affected_rows($verify);
 if(isset($_POST['submit'])){
 
     if(password_verify($password, $grab_password)){
+        // echo session_status();
         header("Location: member.php");
     }
     else if($num_rows == 0){

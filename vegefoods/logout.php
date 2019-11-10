@@ -1,13 +1,12 @@
 <?php
 session_start();
-?>
-<?php
-session_start();
-// Unset all of the session variables.
-unset($_SESSION['username']);
-// Finally, destroy the session.    
-session_destroy();
+$_SESSION['session_secret'] = null;
+// $_SESSION = array();
+session_unset();
 
-header("Location: signin.php");
+// echo session_status();
+
+header("Location: login.php");
+session_destroy();
 exit;
 ?>
