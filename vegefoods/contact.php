@@ -34,7 +34,11 @@ session_start();
   <body class="goto-here">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.php"><img src="https://www.dl.dropboxusercontent.com/s/chaogr72sdus4g8/earthi-logo.svg?dl=0"></a>
+      <?php if(isset($_SESSION['session_secret'])): ?>
+	      <a class="navbar-brand" href="member.php"><img src="https://www.dl.dropboxusercontent.com/s/chaogr72sdus4g8/earthi-logo.svg?dl=0"></a>
+        <?php else: ?>
+        <a class="navbar-brand" href="index.php"><img src="https://www.dl.dropboxusercontent.com/s/chaogr72sdus4g8/earthi-logo.svg?dl=0"></a>
+        <?php endif; ?>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -45,11 +49,14 @@ session_start();
 	          <li class="nav-item">
               <a class="nav-link" href="shop.php" aria-haspopup="true" aria-expanded="false">Shop</a>
             </li>
-	          <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
-			  <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
-        <li class="nav-item"><a href="login.php" class="nav-link">Log In</a></li>
-        <li class="nav-item"><a href="signup.php" class="nav-link">Sign Up</a></li>
-
+          <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+          <?php if(isset($_SESSION['session_secret'])): ?>
+          <li class="nav-item"><a href="logout.php" class="nav-link">Log Out</a></li>
+          <?php else: ?>
+          <li class="nav-item"><a href="login.php" class="nav-link">Log In</a></li>
+          <li class="nav-item"><a href="signup.php" class="nav-link">Sign Up</a></li>
+          <?php endif; ?>
 	        </ul>
 	      </div>
 	    </div>
