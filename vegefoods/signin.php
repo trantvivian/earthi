@@ -19,6 +19,7 @@ if(isset($_POST['submit'])){
 
     if(password_verify($password, $grab_password)){
         // echo session_status();
+        $_SESSION["session_secret"] = "earthi123";
         header("Location: member.php");
     }
     else if($num_rows == 0){

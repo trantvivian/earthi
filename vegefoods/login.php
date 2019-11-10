@@ -1,6 +1,5 @@
 <?php
-session_start();
-$_SESSION["session_secret"] = "earthi123";
+// $_SESSION["session_secret"] = "earthi123";
 ?>
 <!DOCTYPE html>
 <html lang="en">

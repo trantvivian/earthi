@@ -5,7 +5,6 @@ if (isset($_SESSION['session_secret'])) {
   header("Location: login.php");
   exit();
 }
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
