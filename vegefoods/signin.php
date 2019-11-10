@@ -24,7 +24,7 @@ if(isset($_POST['submit'])){
         header("Location: signup_error2.php");
     }
     else{
-        header("Location: signin.php");
+        header("Location: login.php");
     }
 }
 

@@ -73,7 +73,7 @@
                     <div class="limiter">
                             <div class="container-login100">
                                 <div class="wrap-login100">
-                                        <form id="login" action="login.php" method="POST" class="bg-white contact-form">
+                                        <form id="login" action="signin.php" method="POST" class="bg-white contact-form">
                                                 <div class="form-group">
                                                     <span class = "label">Your Email</span>
                                                   <input type="text" id="email" name="email" class="form-control" placeholder="you@example.com">
