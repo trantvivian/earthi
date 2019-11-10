@@ -44,7 +44,11 @@ session_start();
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
+          <?php if(isset($_SESSION['session_secret'])): ?>
+	          <li class="nav-item active"><a href="member.php" class="nav-link">Home</a></li>
+			     <?php else: ?>
+			    	<li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
+			    	<?php endif; ?>
 	          <li class="nav-item">
               <a class="nav-link" href="shop.php" aria-haspopup="true" aria-expanded="false">Shop</a>
             </li>

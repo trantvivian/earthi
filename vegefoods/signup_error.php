@@ -41,14 +41,22 @@ session_start();
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
-	          <li class="nav-item">
+          <?php if(isset($_SESSION['session_secret'])): ?>
+	          <li class="nav-item active"><a href="member.php" class="nav-link">Home</a></li>
+			  <?php else: ?>
+				<li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
+				<?php endif; ?>
+        	  <li class="nav-item">
               <a class="nav-link" href="shop.php" aria-haspopup="true" aria-expanded="false">Shop</a>
             </li>
 	          <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
-			  <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
-              <li class="nav-item"><a href="login.php" class="nav-link">Log In</a></li>
-              <li class="nav-item"><a href="signup.php" class="nav-link">Sign Up</a></li>
+          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+          <?php if(isset($_SESSION['session_secret'])): ?>
+          <li class="nav-item"><a href="logout.php" class="nav-link">Log Out</a></li>
+          <?php else: ?>
+          <li class="nav-item"><a href="login.php" class="nav-link">Log In</a></li>
+          <li class="nav-item"><a href="signup.php" class="nav-link">Sign Up</a></li>
+          <?php endif; ?>
 
 	        </ul>
 	      </div>
