@@ -31,21 +31,21 @@
   <body class="goto-here">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><img src="https://www.dl.dropboxusercontent.com/s/chaogr72sdus4g8/earthi-logo.svg?dl=0"></a>
+	      <a class="navbar-brand" href="index.php"><img src="https://www.dl.dropboxusercontent.com/s/chaogr72sdus4g8/earthi-logo.svg?dl=0"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
 	          <li class="nav-item">
-              <a class="nav-link" href="shop.html" aria-haspopup="true" aria-expanded="false">Shop</a>
+              <a class="nav-link" href="shop.php" aria-haspopup="true" aria-expanded="false">Shop</a>
             </li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-			  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        <li class="nav-item"><a href="login.html" class="nav-link">Log In</a></li>
-        <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
+	          <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+			  <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="login.php" class="nav-link">Log In</a></li>
+        <li class="nav-item"><a href="signup.php" class="nav-link">Sign Up</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -99,7 +99,7 @@
 											at the same time you can help to save the earth.</p>
 
 											<h2 class="question">Q. How do I get started??</h2>
-											<p>Click <b><a href="signup.html">here</a></b> to sign up for an account now so you can start shopping with us!</p>
+											<p>Click <b><a href="signup.php">here</a></b> to sign up for an account now so you can start shopping with us!</p>
           </div>
         </div>   		
     	</div>
@@ -120,9 +120,9 @@
             <div class="ftco-footer-widget mb-4 ml-md-5">
               <h2 class="ftco-heading-2">Menu</h2>
               <ul class="list-unstyled">
-                <li><a href="shop.html" class="py-2 d-block">Shop</a></li>
-                <li><a href="about.html" class="py-2 d-block">About</a></li>
-                <li><a href="contact.html" class="py-2 d-block">Contact Us</a></li>
+                <li><a href="shop.php" class="py-2 d-block">Shop</a></li>
+                <li><a href="about.php" class="py-2 d-block">About</a></li>
+                <li><a href="contact.php" class="py-2 d-block">Contact Us</a></li>
               </ul>
             </div>
           </div>

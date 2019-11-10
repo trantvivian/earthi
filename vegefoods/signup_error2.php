@@ -31,21 +31,21 @@
   <body class="goto-here">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><img src="https://www.dl.dropboxusercontent.com/s/chaogr72sdus4g8/earthi-logo.svg?dl=0"></a>
+	      <a class="navbar-brand" href="index.php"><img src="https://www.dl.dropboxusercontent.com/s/chaogr72sdus4g8/earthi-logo.svg?dl=0"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
 	          <li class="nav-item">
-              <a class="nav-link" href="shop.html" aria-haspopup="true" aria-expanded="false">Shop</a>
+              <a class="nav-link" href="shop.php" aria-haspopup="true" aria-expanded="false">Shop</a>
             </li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-			  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-              <li class="nav-item"><a href="login.html" class="nav-link">Log In</a></li>
-              <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
+	          <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+			  <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+              <li class="nav-item"><a href="login.php" class="nav-link">Log In</a></li>
+              <li class="nav-item"><a href="signup.php" class="nav-link">Sign Up</a></li>
 
 	        </ul>
 	      </div>
@@ -74,6 +74,7 @@
                 <div class="container-login100">
                     <div class="wrap-login100">
                       <form id="signup" name="insert" action="submit.php" method="POST">
+                        <div class="alert alert-danger" role="alert">It looks like there is no account under this email address. Please make an account before logging in!</a></div>
                         <div class="form-group">
                         <span class = "label">Full Name</span>
                           <input type="text" id="full_name" name="full_name" class="form-control" placeholder="First and Last">
@@ -191,9 +192,9 @@
             <div class="ftco-footer-widget mb-4 ml-md-5">
               <h2 class="ftco-heading-2">Menu</h2>
               <ul class="list-unstyled">
-                <li><a href="shop.html" class="py-2 d-block">Shop</a></li>
-                <li><a href="about.html" class="py-2 d-block">About</a></li>
-                <li><a href="contact.html" class="py-2 d-block">Contact Us</a></li>
+                <li><a href="shop.php" class="py-2 d-block">Shop</a></li>
+                <li><a href="about.php" class="py-2 d-block">About</a></li>
+                <li><a href="contact.php" class="py-2 d-block">Contact Us</a></li>
               </ul>
             </div>
           </div>

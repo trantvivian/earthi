@@ -31,21 +31,21 @@
   <body class="goto-here">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><img src="https://www.dl.dropboxusercontent.com/s/chaogr72sdus4g8/earthi-logo.svg?dl=0"></a>
+	      <a class="navbar-brand" href="index.php"><img src="https://www.dl.dropboxusercontent.com/s/chaogr72sdus4g8/earthi-logo.svg?dl=0"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
 	          <li class="nav-item">
-              <a class="nav-link" href="shop.html"  aria-haspopup="false" aria-expanded="false">Shop</a>
+              <a class="nav-link" href="shop.php"  aria-haspopup="false" aria-expanded="false">Shop</a>
             </li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-			  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-			  <li class="nav-item"><a href="login.html" class="nav-link">Log In</a></li>
-			  <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
+	          <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+			  <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+			  <li class="nav-item"><a href="login.php" class="nav-link">Log In</a></li>
+			  <li class="nav-item"><a href="signup.php" class="nav-link">Sign Up</a></li>
 
 	        </ul>
 	      </div>
@@ -63,7 +63,7 @@
 	            <div class="col-md-12 ftco-animate text-center">
 	              <h1 class="mb-2">Certified Sustainable Foods</h1>
 	              <h2 class="subheading mb-4">Pickup your order locally</h2>
-	              <p><a href="shop.html" class="btn btn-primary">Shop Now</a></p>
+	              <p><a href="shop.php" class="btn btn-primary">Shop Now</a></p>
 	            </div>
 
 	          </div>
@@ -120,19 +120,19 @@
 								<div class="category-wrap-2 ftco-animate img align-self-stretch d-flex" style="background-image: url(images/category.jpg);">
 									<div class="text text-center">
 										<h2>Produce</h2>
-										<p><a href="shop.html" class="btn btn-primary">Shop now</a></p>
+										<p><a href="shop.php" class="btn btn-primary">Shop now</a></p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(images/category-1.jpg);">
 									<div class="text px-3 py-1">
-										<h2 class="mb-0"><a href="shop.html">Fruits</a></h2>
+										<h2 class="mb-0"><a href="shop.php">Fruits</a></h2>
 									</div>
 								</div>
 								<div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url(images/category-2.jpg);">
 									<div class="text px-3 py-1">
-										<h2 class="mb-0"><a href="shop.html">Vegetables</a></h2>
+										<h2 class="mb-0"><a href="shop.php">Vegetables</a></h2>
 									</div>
 								</div>
 							</div>
@@ -142,12 +142,12 @@
 					<div class="col-md-4">
 						<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(images/category-3.jpg);">
 							<div class="text px-3 py-1">
-								<h2 class="mb-0"><a href="shop.html">Juices</a></h2>
+								<h2 class="mb-0"><a href="shop.php">Juices</a></h2>
 							</div>		
 						</div>
 						<div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url(images/category-4.jpg);">
 							<div class="text px-3 py-1">
-								<h2 class="mb-0"><a href="shop.html">Dried</a></h2>
+								<h2 class="mb-0"><a href="shop.php">Dried</a></h2>
 							</div>
 						</div>
 					</div>
@@ -172,9 +172,9 @@
             <div class="ftco-footer-widget mb-4 ml-md-5">
               <h2 class="ftco-heading-2">Menu</h2>
               <ul class="list-unstyled">
-                <li><a href="shop.html" class="py-2 d-block">Shop</a></li>
-                <li><a href="about.html" class="py-2 d-block">About</a></li>
-                <li><a href="contact.html" class="py-2 d-block">Contact Us</a></li>
+                <li><a href="shop.php" class="py-2 d-block">Shop</a></li>
+                <li><a href="about.php" class="py-2 d-block">About</a></li>
+                <li><a href="contact.php" class="py-2 d-block">Contact Us</a></li>
               </ul>
             </div>
           </div>

@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
     if(!$mail->send()){
         echo("Something went wrong. Please try again.");
     } else{
-        header("Location: contact_success.html");
+        header("Location: contact_success.php");
     }
 
 }

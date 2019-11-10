@@ -31,21 +31,21 @@
   <body class="goto-here">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><img src="https://www.dl.dropboxusercontent.com/s/chaogr72sdus4g8/earthi-logo.svg?dl=0"></a>
+	      <a class="navbar-brand" href="index.php"><img src="https://www.dl.dropboxusercontent.com/s/chaogr72sdus4g8/earthi-logo.svg?dl=0"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
 	          <li class="nav-item">
-              <a class="nav-link" href="shop.html" aria-haspopup="true" aria-expanded="false">Shop</a>
+              <a class="nav-link" href="shop.php" aria-haspopup="true" aria-expanded="false">Shop</a>
             </li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-			  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-              <li class="nav-item"><a href="login.html" class="nav-link">Log In</a></li>
-              <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
+	          <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+			  <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+              <li class="nav-item"><a href="login.php" class="nav-link">Log In</a></li>
+              <li class="nav-item"><a href="signup.php" class="nav-link">Sign Up</a></li>
 
 	        </ul>
 	      </div>
@@ -62,8 +62,9 @@
     	<div class="container">
         <div class="row justify-content-center mb-3 pb-3">
           <div class="col-md-12 heading-section text-center ftco-animate">
-              <h2 class="mb-4">Email Sent!</h2>
-              <p>Thanks for contacting us. We'll get back to you soon!</p>
+              <h2 class="mb-4">Sign Up Successful!</h2>
+              <p>Thank you for signing up! You're on your way to making the Earth a better place! Click <a href="login.php">here</a> to login.
+              </p>
           </div> 	
         </div>
         <div class="row">
@@ -95,9 +96,9 @@
             <div class="ftco-footer-widget mb-4 ml-md-5">
               <h2 class="ftco-heading-2">Menu</h2>
               <ul class="list-unstyled">
-                <li><a href="shop.html" class="py-2 d-block">Shop</a></li>
-                <li><a href="about.html" class="py-2 d-block">About</a></li>
-                <li><a href="contact.html" class="py-2 d-block">Contact Us</a></li>
+                <li><a href="shop.php" class="py-2 d-block">Shop</a></li>
+                <li><a href="about.php" class="py-2 d-block">About</a></li>
+                <li><a href="contact.php" class="py-2 d-block">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -110,7 +111,7 @@
 					<p>
             <p></p>
             <li><a href="mailto:earthi.ecomm@gmail.com"><span class="icon icon-envelope"></span><span class="text">earthi.ecomm@gmail.com</span></a></li>
-           </ul>
+          </ul>
 	            </div>
             </div>
           </div>

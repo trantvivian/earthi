@@ -43,9 +43,9 @@ if(isset($_POST['submit'])){
 
     if($num_rows == 0){
         $mail->send();
-        header("Location: result.html");
+        header("Location: result.php");
     } else{
-        header("Location: signup_error.html");
+        header("Location: signup_error.php");
     }
 }
 

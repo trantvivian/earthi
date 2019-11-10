@@ -27,7 +27,7 @@ if(isset($_POST['refund'])){
     if(!$mail->send()){
         echo("Something went wrong. Please try again.");
     } else{
-        header("Location: member.html");
+        header("Location: member.php");
     }
 
 }
