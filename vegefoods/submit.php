@@ -1,4 +1,5 @@
 <?php
+session_start();
 $db_connection = pg_connect("host=ec2-184-73-232-93.compute-1.amazonaws.com dbname=dfr5diqgclghcj user=jiyfrexzyevjgb
 password=c62964fdc99205e14046ec51c65dc8effb2fde516b1c72aaa009deac12401aa5");
 

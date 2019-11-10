@@ -1,4 +1,5 @@
 <?php
+session_start();
 $email = $_POST['email'];
 $item = $_POST['item'];
 $reason = $_POST['reason'];
