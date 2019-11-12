@@ -289,7 +289,7 @@ session_start();
             e.preventDefault();
           }
 
-          if(!/[a-zA-Z]+/.test(city)){
+          if(!/^[a-zA-Z]*$/.test(city)){
             $('#city').after('<span class="error" style="color:red">Please enter a valid city</span>');
             e.preventDefault();
           }

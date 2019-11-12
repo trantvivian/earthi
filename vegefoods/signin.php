@@ -23,10 +23,10 @@ if(isset($_POST['submit'])){
         header("Location: member.php");
     }
     else if($num_rows == 0){
-        header("Location: signup_error2.php");
+        header("Location: login_error.php");
     }
     else{
-        header("Location: login.php");
+        header("Location: login_error2.php");
     }
 }
 
