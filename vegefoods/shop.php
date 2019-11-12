@@ -108,14 +108,18 @@ session_start();
 	    					</div>
 	    					<div class="bottom-area d-flex px-3">
 	    						<div class="m-auto d-flex">
+									<?php if(isset($_SESSION['session_secret'])): ?>
 										<form action="https://test.bitpay.com/checkout" method="post">
 											<input type="hidden" name="action" value="checkout" />
 											<input type="hidden" name="posData" value="" />
 											<input type="hidden" name="data" value="qbAfM+webtfbPR6Y7T0S7Vv/43J9mXh5y4Rr9QO677D62weCdmPWLskP/sJyfvTBJcHMobQ3r3D9dphXveCCGGhweH5zNMzBhpv85hBz2MebTwevsO1XJA7T/FyuvflYKDAGPkrIOihTDcnn2+6fR8uOP/8GPBygGYklBreCevvGghQFgTVeE/PIuL0Yoo+v" />
-											<?php if(isset($_SESSION['session_secret'])): ?>
 											<input type="submit" class="sphere" value="+">
-											<?php endif; ?>
 										</form>
+									<?php else: ?>
+										<form action="login.php" method="post">
+											<input type="submit" class="sphere" value="+">
+										</form>
+									<?php endif; ?>
 	    							</a>
     							</div>
     						</div>
@@ -136,14 +140,18 @@ session_start();
 	    					</div>
     						<div class="bottom-area d-flex px-3">
 	    						<div class="m-auto d-flex">
+									<?php if(isset($_SESSION['session_secret'])): ?>
 										<form action="https://test.bitpay.com/checkout" method="post">
 											<input type="hidden" name="action" value="checkout" />
 											<input type="hidden" name="posData" value="" />
 											<input type="hidden" name="data" value="qbAfM+webtfbPR6Y7T0S7Vv/43J9mXh5y4Rr9QO677AtAjtBH/ONtUm2bavGe/ULPY0PC6CGAeCLZI3RJe+A9oc/NCBvsArD7Zq3zdSakj33SmONJhUOU8zZSf2yyR2W8JnC59/KJ+2I6CuXN1YMiYibhfeLoIXdVuGommWTGmf9O9xfHBDQp21gqUNkZGPM" />
-											<?php if(isset($_SESSION['session_secret'])): ?>
 											<input type="submit" class="sphere" value="+">
-											<?php endif; ?>
 										</form>
+									<?php else: ?>
+										<form action="login.php" method="post">
+											<input type="submit" class="sphere" value="+">
+										</form>
+									<?php endif; ?>
     							</div>
     						</div>
     					</div>
@@ -163,14 +171,18 @@ session_start();
 	    					</div>
     						<div class="bottom-area d-flex px-3">
 	    						<div class="m-auto d-flex">
+									<?php if(isset($_SESSION['session_secret'])): ?>
 										<form action="https://test.bitpay.com/checkout" method="post">
 											<input type="hidden" name="action" value="checkout" />
 											<input type="hidden" name="posData" value="" />
 											<input type="hidden" name="data" value="qbAfM+webtfbPR6Y7T0S7Vv/43J9mXh5y4Rr9QO677D62weCdmPWLskP/sJyfvTBJcHMobQ3r3D9dphXveCCGGhweH5zNMzBhpv85hBz2MebTwevsO1XJA7T/FyuvflYKDAGPkrIOihTDcnn2+6fR8uOP/8GPBygGYklBreCevvGghQFgTVeE/PIuL0Yoo+v" />
-											<?php if(isset($_SESSION['session_secret'])): ?>
 											<input type="submit" class="sphere" value="+">
-											<?php endif; ?>
 										</form>
+									<?php else: ?>
+										<form action="login.php" method="post">
+											<input type="submit" class="sphere" value="+">
+										</form>
+									<?php endif; ?>
     							</div>
     						</div>
     					</div>
@@ -190,14 +202,18 @@ session_start();
 	    					</div>
     						<div class="bottom-area d-flex px-3">
 	    						<div class="m-auto d-flex">
+									<?php if(isset($_SESSION['session_secret'])): ?>
 										<form action="https://test.bitpay.com/checkout" method="post">
 											<input type="hidden" name="action" value="checkout" />
 											<input type="hidden" name="posData" value="" />
 											<input type="hidden" name="data" value="qbAfM+webtfbPR6Y7T0S7Vv/43J9mXh5y4Rr9QO677ASFC1PcSi4uTOb2rFKbGDN8cYhu5ySfVN4PgLeL3vtBzbdAAGilIT7e5DdCyo4BvNBdln+91YlTDgUVHaoQobIX4JmptxwQ76sxnZTcUWNqeh5/xNmPycBuoPHh3iKQOD9xd1pG1XyxgFvxVoajn5h" />
-											<?php if(isset($_SESSION['session_secret'])): ?>
 											<input type="submit" class="sphere" value="+">
-											<?php endif; ?>
 										</form>	
+									<?php else: ?>
+										<form action="login.php" method="post">
+											<input type="submit" class="sphere" value="+">
+										</form>
+									<?php endif; ?>
     							</div>
     						</div>
     					</div>
@@ -219,14 +235,18 @@ session_start();
 	    					</div>
 	    					<div class="bottom-area d-flex px-3">
 	    						<div class="m-auto d-flex">
-	    							<form action="https://test.bitpay.com/checkout" method="post">
-										<input type="hidden" name="action" value="checkout" />
-										<input type="hidden" name="posData" value="" />
-										<input type="hidden" name="data" value="qbAfM+webtfbPR6Y7T0S7Vv/43J9mXh5y4Rr9QO677BCkKeKIjkm6PW3SujW9y2qq7GkcN/eP30BHlAYNwnRTNfCgqzfKPy3ElRQK+9O4/WQ4GjoEnYkJz04HDYafCrxQkWbkZw7dbTup5G+KScIIuRaSk0xlH56zXe1XHUkN3vCk5isjn17lgJZyRvuExaZ" />
-										<?php if(isset($_SESSION['session_secret'])): ?>
-										<input type="submit" class="sphere" value="+">
-										<?php endif; ?>
-									</form>
+									<?php if(isset($_SESSION['session_secret'])): ?>
+										<form action="https://test.bitpay.com/checkout" method="post">
+											<input type="hidden" name="action" value="checkout" />
+											<input type="hidden" name="posData" value="" />
+											<input type="hidden" name="data" value="qbAfM+webtfbPR6Y7T0S7Vv/43J9mXh5y4Rr9QO677BCkKeKIjkm6PW3SujW9y2qq7GkcN/eP30BHlAYNwnRTNfCgqzfKPy3ElRQK+9O4/WQ4GjoEnYkJz04HDYafCrxQkWbkZw7dbTup5G+KScIIuRaSk0xlH56zXe1XHUkN3vCk5isjn17lgJZyRvuExaZ" />
+											<input type="submit" class="sphere" value="+">
+										</form>
+									<?php else: ?>
+										<form action="login.php" method="post">
+											<input type="submit" class="sphere" value="+">
+										</form>
+									<?php endif; ?>
     							</div>
     						</div>
     					</div>
@@ -246,14 +266,18 @@ session_start();
 	    					</div>
     						<div class="bottom-area d-flex px-3">
 	    						<div class="m-auto d-flex">
-									<form action="https://test.bitpay.com/checkout" method="post">
-										<input type="hidden" name="action" value="checkout" />
-										<input type="hidden" name="posData" value="" />
-										<input type="hidden" name="data" value="qbAfM+webtfbPR6Y7T0S7Vv/43J9mXh5y4Rr9QO677ASFC1PcSi4uTOb2rFKbGDNoPU4k8pkDxuDchs93twIJZgMEX22bhApNWD4zou4K+I1345CVNI5zK/I3N2YW3zvJIjF+jANp2qpXOZVaxlQaSlMz1i+R6ovQrIGfbngxxz6UnxGhv57gfp00oQ4hT6h" />
-										<?php if(isset($_SESSION['session_secret'])): ?>
-										<input type="submit" class="sphere" value="+">
-										<?php endif; ?>
-									  </form>	
+									<?php if(isset($_SESSION['session_secret'])): ?>
+										<form action="https://test.bitpay.com/checkout" method="post">
+											<input type="hidden" name="action" value="checkout" />
+											<input type="hidden" name="posData" value="" />
+											<input type="hidden" name="data" value="qbAfM+webtfbPR6Y7T0S7Vv/43J9mXh5y4Rr9QO677ASFC1PcSi4uTOb2rFKbGDNoPU4k8pkDxuDchs93twIJZgMEX22bhApNWD4zou4K+I1345CVNI5zK/I3N2YW3zvJIjF+jANp2qpXOZVaxlQaSlMz1i+R6ovQrIGfbngxxz6UnxGhv57gfp00oQ4hT6h" />
+											<input type="submit" class="sphere" value="+">
+										</form>	
+									  <?php else: ?>
+										<form action="login.php" method="post">
+											<input type="submit" class="sphere" value="+">
+										</form>
+									<?php endif; ?>
     							</div>
     						</div>
     					</div>
@@ -273,14 +297,18 @@ session_start();
 	    					</div>
     						<div class="bottom-area d-flex px-3">
 	    						<div class="m-auto d-flex">
+									<?php if(isset($_SESSION['session_secret'])): ?>
 										<form action="https://test.bitpay.com/checkout" method="post">
 											<input type="hidden" name="action" value="checkout" />
 											<input type="hidden" name="posData" value="" />
 											<input type="hidden" name="data" value="qbAfM+webtfbPR6Y7T0S7Vv/43J9mXh5y4Rr9QO677D62weCdmPWLskP/sJyfvTBJcHMobQ3r3D9dphXveCCGGhweH5zNMzBhpv85hBz2MebTwevsO1XJA7T/FyuvflYKDAGPkrIOihTDcnn2+6fR8uOP/8GPBygGYklBreCevvGghQFgTVeE/PIuL0Yoo+v" />
-											<?php if(isset($_SESSION['session_secret'])): ?>
 											<input type="submit" class="sphere" value="+">
-											<?php endif; ?>
 										</form>
+									<?php else: ?>
+										<form action="login.php" method="post">
+											<input type="submit" class="sphere" value="+">
+										</form>
+									<?php endif; ?>
     							</div>
     						</div>
     					</div>
@@ -300,14 +328,18 @@ session_start();
 	    					</div>
     						<div class="bottom-area d-flex px-3">
 	    						<div class="m-auto d-flex">
+									<?php if(isset($_SESSION['session_secret'])): ?>
 										<form action="https://test.bitpay.com/checkout" method="post">
 											<input type="hidden" name="action" value="checkout" />
 											<input type="hidden" name="posData" value="" />
 											<input type="hidden" name="data" value="qbAfM+webtfbPR6Y7T0S7Vv/43J9mXh5y4Rr9QO677BjNzJQGo7GKzcLSe6H3T7Bn3J/cam0Ewh4yGDMUdV0xr6SzFgEce+ayWUi+Hu1SE/yQfp/ZCfG3GAIVL1b7poa3JW0i+aOmdbCtCDcQi1x8fvGkixWrVMAvQkZadagxO3tXHTi6VGrmCoyi6nvxn0H" />
-											<?php if(isset($_SESSION['session_secret'])): ?>
 											<input type="submit" class="sphere" value="+">
-											<?php endif; ?>
 										</form>	
+									<?php else: ?>
+										<form action="login.php" method="post">
+											<input type="submit" class="sphere" value="+">
+										</form>
+									<?php endif; ?>
     							</div>
     						</div>
     					</div>
