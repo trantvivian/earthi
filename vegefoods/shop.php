@@ -112,7 +112,9 @@ session_start();
 										<form action="https://test.bitpay.com/checkout" method="post">
 											<input type="hidden" name="action" value="checkout" />
 											<input type="hidden" name="posData" value="" />
-											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAYXKXOiQYYELoaJWW0IVMNPGTq6/grnjPmDw+AL2EUmSXsPlqPCYQXTdrWICQfJdxWHEHxH6hMkPAVKPOkqHLT2SzB8WNUM2UZbBu6LW0vYnr0Q84vNMbnELHvHBaI4wqA=" />										</form>
+											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAYXKXOiQYYELoaJWW0IVMNPGTq6/grnjPmDw+AL2EUmSXsPlqPCYQXTdrWICQfJdxWHEHxH6hMkPAVKPOkqHLT2SzB8WNUM2UZbBu6LW0vYnr0Q84vNMbnELHvHBaI4wqA=" />
+											<input type="submit" class="sphere" value="+">										
+										</form>
 									<?php else: ?>
 										<form action="login.php" method="post">
 											<input type="submit" class="sphere" value="+">
@@ -142,7 +144,8 @@ session_start();
 										<form action="https://test.bitpay.com/checkout" method="post">
 											<input type="hidden" name="action" value="checkout" />
 											<input type="hidden" name="posData" value="" />
-											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAbPBvd1esGtfsPmRB2clnxzIxa0aOhUIZvjOZsuOvvcIBbS4faDTULOUe3mjBduk/HQp8xKN9r/SqDIzlRIEG/1iiLVPZojMn2vezV2pseZsYnTdUt4YmNtgpbc4xdibJk=" />											<input type="submit" class="sphere" value="+">
+											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAbPBvd1esGtfsPmRB2clnxzIxa0aOhUIZvjOZsuOvvcIBbS4faDTULOUe3mjBduk/HQp8xKN9r/SqDIzlRIEG/1iiLVPZojMn2vezV2pseZsYnTdUt4YmNtgpbc4xdibJk=" />											
+											<input type="submit" class="sphere" value="+">
 										</form>
 									<?php else: ?>
 										<form action="login.php" method="post">
@@ -172,7 +175,8 @@ session_start();
 										<form action="https://test.bitpay.com/checkout" method="post">
 											<input type="hidden" name="action" value="checkout" />
 											<input type="hidden" name="posData" value="" />
-											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAYXKXOiQYYELoaJWW0IVMNPGTq6/grnjPmDw+AL2EUmSXsPlqPCYQXTdrWICQfJdxWHEHxH6hMkPAVKPOkqHLT2SzB8WNUM2UZbBu6LW0vYnr0Q84vNMbnELHvHBaI4wqA=" />											<input type="submit" class="sphere" value="+">
+											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAYXKXOiQYYELoaJWW0IVMNPGTq6/grnjPmDw+AL2EUmSXsPlqPCYQXTdrWICQfJdxWHEHxH6hMkPAVKPOkqHLT2SzB8WNUM2UZbBu6LW0vYnr0Q84vNMbnELHvHBaI4wqA=" />											
+											<input type="submit" class="sphere" value="+">
 										</form>
 									<?php else: ?>
 										<form action="login.php" method="post">
@@ -202,7 +206,8 @@ session_start();
 										<form action="https://test.bitpay.com/checkout" method="post">
 											<input type="hidden" name="action" value="checkout" />
 											<input type="hidden" name="posData" value="" />
-											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAauT9+4CH4iBlh/tF4FBwLz48fWbkLTINQQj9GI48BuB7pwt9KiRBpF8q3glKaHJU52kXio00Vz8hA4iUq1cfGQQ7zSWPkB+gAmoA36MSM+Yssx1kKWpzp/l4A+UM4qWA8=" />											<input type="submit" class="sphere" value="+">
+											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAauT9+4CH4iBlh/tF4FBwLz48fWbkLTINQQj9GI48BuB7pwt9KiRBpF8q3glKaHJU52kXio00Vz8hA4iUq1cfGQQ7zSWPkB+gAmoA36MSM+Yssx1kKWpzp/l4A+UM4qWA8=" />											
+											<input type="submit" class="sphere" value="+">
 										</form>	
 									<?php else: ?>
 										<form action="login.php" method="post">
@@ -234,7 +239,8 @@ session_start();
 										<form action="https://test.bitpay.com/checkout" method="post">
 											<input type="hidden" name="action" value="checkout" />
 											<input type="hidden" name="posData" value="" />
-											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAaRV3/x+cnecXiAatrro1Yn1WU82c3Ipn5RZp9d+WEO7be6QBt1n/FLWjA/oWdjiNwOhUbPUISziZ6OUdpN4hSsLC5PBJ0Vpc8kjCMi2vEaHhBWg/7j5jkoxfNmKNW8lD0=" />											<input type="submit" class="sphere" value="+">
+											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAaRV3/x+cnecXiAatrro1Yn1WU82c3Ipn5RZp9d+WEO7be6QBt1n/FLWjA/oWdjiNwOhUbPUISziZ6OUdpN4hSsLC5PBJ0Vpc8kjCMi2vEaHhBWg/7j5jkoxfNmKNW8lD0=" />											
+											<input type="submit" class="sphere" value="+">
 										</form>
 									<?php else: ?>
 										<form action="login.php" method="post">
@@ -264,7 +270,8 @@ session_start();
 										<form action="https://test.bitpay.com/checkout" method="post">
 											<input type="hidden" name="action" value="checkout" />
 											<input type="hidden" name="posData" value="" />
-											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAauT9+4CH4iBlh/tF4FBwLzm1VCH1yqGV2ecs/5f3exzQUJk354nfTpeGbvN8k3yQa4YOKaUZrT1/ASSpOIuIy9WiHeK77f8SH9msGbFKxwi7BGvdMOjTchOQKEtjFHh7A=" />											<input type="submit" class="sphere" value="+">
+											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAauT9+4CH4iBlh/tF4FBwLzm1VCH1yqGV2ecs/5f3exzQUJk354nfTpeGbvN8k3yQa4YOKaUZrT1/ASSpOIuIy9WiHeK77f8SH9msGbFKxwi7BGvdMOjTchOQKEtjFHh7A=" />											
+											<input type="submit" class="sphere" value="+">
 										</form>	
 									  <?php else: ?>
 										<form action="login.php" method="post">
@@ -294,7 +301,8 @@ session_start();
 										<form action="https://test.bitpay.com/checkout" method="post">
 											<input type="hidden" name="action" value="checkout" />
 											<input type="hidden" name="posData" value="" />
-											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAYXKXOiQYYELoaJWW0IVMNPGTq6/grnjPmDw+AL2EUmSXsPlqPCYQXTdrWICQfJdxWHEHxH6hMkPAVKPOkqHLT2SzB8WNUM2UZbBu6LW0vYnr0Q84vNMbnELHvHBaI4wqA=" />											<input type="submit" class="sphere" value="+">
+											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAYXKXOiQYYELoaJWW0IVMNPGTq6/grnjPmDw+AL2EUmSXsPlqPCYQXTdrWICQfJdxWHEHxH6hMkPAVKPOkqHLT2SzB8WNUM2UZbBu6LW0vYnr0Q84vNMbnELHvHBaI4wqA=" />											
+											<input type="submit" class="sphere" value="+">
 										</form>
 									<?php else: ?>
 										<form action="login.php" method="post">
@@ -324,7 +332,8 @@ session_start();
 										<form action="https://test.bitpay.com/checkout" method="post">
 											<input type="hidden" name="action" value="checkout" />
 											<input type="hidden" name="posData" value="" />
-											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAZ1FeOqQc8+IfDoP1sSVQ5cMajVDoz/g82IQQktCsO8NOPgEio5qPJ1UECQVtGU1WgxUptKifQtPBPqvft0HNX1N3f+afPJV3T2cdAZLsrZWgGNr2aZKPv/lzReCiB8avE=" />											<input type="submit" class="sphere" value="+">
+											<input type="hidden" name="data" value="KtqWOh5dTqAVRdlzErq6Vzcteaptt6/ncWpc0/TknAZ1FeOqQc8+IfDoP1sSVQ5cMajVDoz/g82IQQktCsO8NOPgEio5qPJ1UECQVtGU1WgxUptKifQtPBPqvft0HNX1N3f+afPJV3T2cdAZLsrZWgGNr2aZKPv/lzReCiB8avE=" />											
+											<input type="submit" class="sphere" value="+">
 										</form>	
 									<?php else: ?>
 										<form action="login.php" method="post">
